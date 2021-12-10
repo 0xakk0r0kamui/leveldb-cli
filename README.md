@@ -82,6 +82,11 @@ Set the value of for a key.
 Delete the record by key.
  * `KEY` - The key
 
+### compact
+> compact
+
+Compact flattens the underlying data store for all keys in the data store.
+
 ### get
 > get `KEY` [`FORMAT`]
 

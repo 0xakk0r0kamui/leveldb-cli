@@ -38,6 +38,7 @@ var completer = readline.NewPrefixCompleter(
 	readline.PcItem("put"),
 	readline.PcItem("set"),
 	readline.PcItem("delete"),
+	readline.PcItem("compact"),
 	readline.PcItem("version"),
 )
 
@@ -74,7 +75,7 @@ func main() {
 			break
 		// Command: help
 		case line == "help":
-			fmt.Println("Enter one of the commands to get help: show, set, get, export, open, close, put, delete, version")
+			fmt.Println("Enter one of the commands to get help: show, set, get, export, open, close, put, delete, compact, version")
 			break
 		// Command: quit and exit
 		case line == "quit":
@@ -160,6 +161,13 @@ func main() {
 			}
 
 			fmt.Println(commands.Delete(args[1]))
+			break
+		case args[0] == "compact":
+			if len(args) != 1 {
+				fmt.Print("Bad format. Please use 'compact'")
+				break
+			}
+			fmt.Println(commands.Compact())
 			break
 		// Command: close
 		case args[0] == "close":
