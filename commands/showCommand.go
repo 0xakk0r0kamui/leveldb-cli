@@ -10,10 +10,11 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"github.com/liderman/leveldb-cli/cliutil"
+	"text/tabwriter"
+
+	"github.com/0xakk0r0kamui/leveldb-cli/cliutil"
 	"github.com/syndtr/goleveldb/leveldb/iterator"
 	"github.com/syndtr/goleveldb/leveldb/util"
-	"text/tabwriter"
 )
 
 // It shows the contents of the database prefix filtering.

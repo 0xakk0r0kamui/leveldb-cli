@@ -18,8 +18,8 @@ import (
 	"strconv"
 
 	"bitbucket.org/creachadair/shell"
+	"github.com/0xakk0r0kamui/leveldb-cli/commands"
 	"github.com/chzyer/readline"
-	"github.com/liderman/leveldb-cli/commands"
 )
 
 // Software version number

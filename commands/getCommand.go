@@ -7,7 +7,7 @@
 package commands
 
 import (
-	"github.com/liderman/leveldb-cli/cliutil"
+	"github.com/0xakk0r0kamui/leveldb-cli/cliutil"
 )
 
 // The command get a value.

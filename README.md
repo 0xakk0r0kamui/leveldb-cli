@@ -10,7 +10,7 @@ Installation and build
 ----------------------
 
 ```
-go get github.com/liderman/leveldb-cli
+go get github.com/0xakk0r0kamui/leveldb-cli
 go install
 ```
 
